@@ -20,6 +20,7 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
 
     <!-- styles -->
     <style>
@@ -33,38 +34,41 @@
 <body data-theme="light">
 
     <!-- SEC navbar -->
-    <nav class="w-full px-8 pt-6 pb-4 flex flex-row justify-between font-[Manrope]">
-        <!-- SUBSEC menu -->
-        <div class="flex flex-row items-center cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-7 h-7">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
-            </svg>
+    <nav class="w-full px-8 pt-6 pb-4 lg:sticky lg:top-0 lg:bg-white lg:z-50">
+        <div class="lg:container lg:w-[75%] lg:mx-auto flex flex-row justify-between">
+            <!-- SUBSEC menu -->
+            <div class="flex flex-row items-center cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                </svg>
 
-            <span class="text-[13px] tracking-[1.2px] ml-3 font-semibold uppercase">menu</span>
+                <span class="text-[13px] tracking-[1.2px] ml-3 font-semibold uppercase">menu</span>
+            </div>
+            <!-- /SUBSEC menu -->
+
+            <!-- SUBSEC logo -->
+            <div>
+                <img class="h-10" src="./images/logo.svg">
+            </div>
+            <!-- /SUBSEC logo -->
+
+            <!-- SUBSEC search -->
+            <div class="flex flex-row items-center">
+                <p
+                    class="text-[13px] tracking-[1.2px] transition-all duration-300 mr-3 font-semibold uppercase hover:-translate-x-1">
+                    search
+                </p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-7 h-7 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </div>
+            <!-- /SUBSEC search -->
         </div>
-        <!-- /SUBSEC menu -->
-
-        <!-- SUBSEC logo -->
-        <div>
-            <img class="h-10" src="./images/logo.svg">
-        </div>
-        <!-- /SUBSEC logo -->
-
-        <!-- SUBSEC search -->
-        <div class="flex flex-row items-center">
-            <p
-                class="text-[13px] tracking-[1.2px] transition-all duration-300 mr-3 font-semibold uppercase hover:-translate-x-1">
-                search
-            </p>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-7 h-7 cursor-pointer">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-            </svg>
-        </div>
-        <!-- /SUBSEC search -->
     </nav>
     <!-- /SEC navbar -->
 
@@ -72,7 +76,8 @@
     <section class="bg-inherit">
 
         <!-- SUBSEC cards_container -->
-        <div class="container mx-auto px-8 gap-y-6 grid grid-cols-1 grid-rows-2">
+        <div
+            class="container lg:w-[75%] mx-auto px-8 gap-y-6 grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-6">
 
             <!-- SUBSEC card_car -->
             <div
@@ -126,14 +131,15 @@
     <!-- /SEC one_col -->
 
     <!-- divider -->
-    <div class="mx-auto w-[90%] h-[1px] bg-neutral-300 my-8"></div>
+    <div class="mx-auto lg:w-[71%] w-[90%] h-[1px] bg-neutral-300 lg:my-12 my-8"></div>
     <!-- /divider -->
 
     <!-- SEC two_col -->
     <section class="bg-inherit">
 
         <!-- SUBSEC grid_container -->
-        <div class="container mx-auto px-8 pb-6 gap-4 gap-y-8 grid grid-cols-2 grid-rows-3">
+        <div
+            class="container lg:w-[75%] mx-auto px-8 pb-6 gap-4 gap-y-8 grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-2">
             <!-- SEC row_one -->
             <!-- SUBSEC tech_col -->
             <div class="col-span-1">
@@ -287,33 +293,33 @@
     <!-- /SEC two_col -->
 
     <!-- divider -->
-    <div class="mx-auto w-[90%] h-[1px] bg-neutral-300 my-8"></div>
+    <div class="mx-auto lg:w-[71%] w-[90%] h-[1px] bg-neutral-300 lg:mb-12 my-8"></div>
     <!-- /divider -->
 
     <!-- SEC sub -->
     <section class="bg-inherit px-8">
 
         <!-- SUBSEC container -->
-        <div class="container mx-auto p-4 rounded-md bg-cover"
+        <div class="container lg:w-[75%] mx-auto p-4 rounded-md bg-cover"
             style="background-image: url('./images/subscribe_back.jpg');">
 
             <!-- SUBSEC black_container -->
             <div
-                class="container mx-auto bg-black rounded-md p-16 flex flex-col text-center items-center justify-center">
+                class="container lg:w-[70%] mx-auto bg-black rounded-md p-16 flex flex-col text-center items-center justify-center">
 
-                <h2 class="text-white text-4xl font-bold">
+                <h2 class="text-white text-4xl lg:text-5xl font-bold">
                     Subscribe <em class="font-sans tracking-tighter font-thin">to</em> Oberon
                 </h2>
-                <p class="text-gray-400 font-semibold py-8 w-4/5">
+                <p class="text-neutral-400 font-semibold py-8 w-4/5 lg:w-1/2">
                     Sign up to our newsletters and we'll keep you in the loop.
                 </p>
 
-                <form class="w-full">
+                <form class="w-full flex flex-col lg:flex-row lg:w-2/3">
                     <input type="email"
-                        class="form-control w-full bg-neutral-800 border-none rounded p-4 placeholder:text-neutral-300 transition-all duration-300"
+                        class="form-control w-full lg:w-2/3 lg:mr-2 bg-neutral-800 border-none rounded p-4 placeholder:text-neutral-300 transition-all duration-300"
                         placeholder="Email Address...">
                     <button type="submit"
-                        class="bg-white mt-4 border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded w-full text-black text-lg font-semibold py-2">Subscribe</button>
+                        class="bg-white mt-4 lg:mt-0 lg:w-1/3 border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded w-full text-black text-lg font-semibold py-2">Subscribe</button>
                 </form>
 
             </div>
@@ -326,395 +332,387 @@
     <!-- /SEC sub -->
 
     <!-- divider -->
-    <div class="mx-auto w-[90%] h-[1px] bg-neutral-300 mt-8"></div>
+    <div class="mx-auto lg:w-[71%] w-[90%] h-[1px] bg-neutral-300 mt-8 lg:my-12"></div>
     <!-- /divider -->
 
-    <!-- SEC news -->
-    <section class="bg-inherit">
+    <!-- SEC news_grid -->
+    <div class="lg:flex lg:flex-row lg:items-center lg:justify-center lg:w-[75%] lg:mx-auto">
+        <!-- SEC news -->
+        <section class="bg-inherit lg:w-2/3">
 
-        <!-- SUBSEC flex_container -->
-        <div class="container flex flex-col mx-auto p-8">
-            <!-- SEC card_one -->
-            <div>
-                <!-- SUBSEC image -->
-                <a href="#">
-                    <img src="./images/inter_two.jpg"
-                        class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
-                </a>
-                <!-- /SUBSEC image -->
-
-                <!-- SUBSEC content -->
-                <div class="flex flex-row items-center py-4">
-                    <div
-                        class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
-                        interior
-                    </div>
-                    <span class="uppercase text-xs font-medium">jan 16, 2022</span>
-                </div>
-
-                <div class="flex flex-col w-full">
-                    <h2 class="font-bold text-4xl">
-                        <a href="#">
-                            10 Top commercial interior desing firms to watch
-                        </a>
-                    </h2>
-
-                    <p class="text-gray-500 py-4">
-                        Facilisi sed ante id et euismod volutpat. Sollicitudin urna, lacus viverra risus auctor. Eget
-                        sed vestibulum enim quisque id molestie elementum.
-                </div>
-                <!-- /SUBSEC content -->
-            </div>
-            <!-- /SEC card_one -->
-
-            <!-- SEC card_two -->
-            <div class="py-10">
-                <!-- SUBSEC image -->
-                <a href="#">
-                    <img src="./images/life_three.jpg"
-                        class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
-                </a>
-                <!-- /SUBSEC image -->
-
-                <!-- SUBSEC content -->
-                <div class="flex flex-row items-center py-4">
-                    <div
-                        class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
-                        life style
-                    </div>
-                    <span class="uppercase text-xs font-medium">jan 16, 2022</span>
-                </div>
-
-                <div class="flex flex-col w-full">
-                    <h2 class="font-bold text-4xl">
-                        <a href="#">
-                            Believe in your car skills but never stop improving
-                        </a>
-                    </h2>
-
-                    <p class="text-gray-500 py-4">
-                        Cras hendrerit turpis gravida ut augue luctus netus. Lectus aenean adipiscing ullamcorper nisi,
-                        elementum mus etiam.
-                </div>
-                <!-- /SUBSEC content -->
-            </div>
-            <!-- /SEC card_two -->
-
-            <!-- SEC card_three -->
-            <div>
-                <!-- SUBSEC image -->
-                <a href="#">
-                    <img src="./images/design_two.jpg"
-                        class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
-                </a>
-                <!-- /SUBSEC image -->
-
-                <!-- SUBSEC content -->
-                <div class="flex flex-row items-center py-4">
-                    <div
-                        class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
-                        design
-                    </div>
-                    <span class="uppercase text-xs font-medium">jan 16, 2022</span>
-                </div>
-
-                <div class="flex flex-col w-full">
-                    <h2 class="font-bold text-4xl">
-                        <a href="#">
-                            Brilliant documentaries and books about animation
-                        </a>
-                    </h2>
-
-                    <p class="text-gray-500 py-4">
-                        Viverra in ultrices quam urna, massa nunc. Enim magna sed consequat et porttitor tortor quisque
-                        egestas odio. Nibh orci sed sed.
-                </div>
-                <!-- /SUBSEC content -->
-            </div>
-            <!-- /SEC card_three -->
-
-            <!-- SEC button -->
-            <a href="#">
-                <button
-                    class="bg-black mt-8 border-2 border-black hover:bg-transparent hover:text-black transition-all duration-300 rounded w-full text-white text-lg font-semibold py-4">See
-                    All Posts</button>
-            </a>
-            <!-- /SEC button -->
-        </div>
-        <!-- /SUBSEC flex_container -->
-
-    </section>
-    <!-- /SEC news -->
-
-    <!-- divider -->
-    <div class="mx-auto w-[90%] h-[1px] bg-neutral-300"></div>
-    <!-- /divider -->
-
-    <!-- SEC categories -->
-    <section class="bg-inherit">
-
-        <!-- SUBSEC container -->
-        <div class="container mx-auto p-8 flex flex-col">
-            <!-- SEC header -->
-            <h2 class="font-semibold text-gray-700 text-lg">
-                Categories
-            </h2>
-            <!-- /SEC header -->
-
-            <!-- SEC items -->
-            <div class="flex flex-col my-4">
-                <div class="flex flex-row items-center group py-2">
-                    <div
-                        class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
-                    </div>
-                    <h2 class="font-bold text-xl ml-4">
-                        <a href="#">
-                            Design
-                        </a>
-                    </h2>
-                </div>
-
-                <div class="flex flex-row items-center group py-2">
-                    <div
-                        class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
-                    </div>
-                    <h2 class="font-bold text-xl ml-4">
-                        <a href="#">
-                            Photographs
-                        </a>
-                    </h2>
-                </div>
-
-                <div class="flex flex-row items-center group py-2">
-                    <div
-                        class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
-                    </div>
-                    <h2 class="font-bold text-xl ml-4">
-                        <a href="#">
-                            Interior
-                        </a>
-                    </h2>
-                </div>
-
-                <div class="flex flex-row items-center group py-2">
-                    <div
-                        class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
-                    </div>
-                    <h2 class="font-bold text-xl ml-4">
-                        <a href="#">
-                            Technology
-                        </a>
-                    </h2>
-                </div>
-
-                <div class="flex flex-row items-center group pt-2">
-                    <div
-                        class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
-                    </div>
-                    <h2 class="font-bold text-xl ml-4">
-                        <a href="#">
-                            Life Style
-                        </a>
-                    </h2>
-                </div>
-            </div>
-            <!-- /SEC items -->
-        </div>
-        <!-- /SUBSEC container -->
-
-    </section>
-    <!-- /SEC categories -->
-
-    <!-- SEC featured -->
-    <section class="bg-inherit">
-
-        <!-- SUBSEC container -->
-        <div class="container mx-auto px-8 flex flex-col">
-            <!-- SEC header -->
-            <h2 class="font-semibold text-gray-700 text-lg mb-4">
-                Featured
-            </h2>
-            <!-- /SEC header -->
-
-            <!-- SEC column_one -->
-            <div class="flex my-4">
-                <div class="h-full">
+            <!-- SUBSEC flex_container -->
+            <div class="container lg:w-[75%] flex flex-col mx-auto px-8">
+                <!-- SEC card_one -->
+                <div>
+                    <!-- SUBSEC image -->
                     <a href="#">
-                        <img src="./images/tech_three.jpg"
-                            class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                        <img src="./images/inter_two.jpg"
+                            class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
                     </a>
-                </div>
-                <div class="flex flex-col justify-center items-start ml-8">
-                    <div
-                        class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
-                        technology
-                    </div>
-                    <h2 class="font-bold text-lg">
-                        <a href="#">
-                            iPhone is bound to make an impact in your business
-                        </a>
-                    </h2>
-                </div>
-            </div>
-            <!-- /SEC column_one -->
+                    <!-- /SUBSEC image -->
 
-            <!-- SEC column_two -->
-            <div class="flex my-4">
-                <div class="h-full">
-                    <a href="#">
-                        <img src="./images/life_two.jpg"
-                            class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-                    </a>
-                </div>
-                <div class="flex flex-col justify-center items-start ml-8">
-                    <div
-                        class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
-                        life style
+                    <!-- SUBSEC content -->
+                    <div class="flex flex-row items-center py-4">
+                        <div
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                            interior
+                        </div>
+                        <span class="uppercase text-xs font-medium">jan 16, 2022</span>
                     </div>
-                    <h2 class="font-bold text-lg">
-                        <a href="#">
-                            Are you embarrassed by your car skills? Here's what to do
-                        </a>
-                    </h2>
-                </div>
-            </div>
-            <!-- /SEC column_two -->
 
-            <!-- SEC column_three -->
-            <div class="flex my-4">
-                <div class="h-full">
+                    <div class="flex flex-col w-full">
+                        <h2 class="font-bold text-4xl">
+                            <a href="#">
+                                10 Top commercial interior desing firms to watch
+                            </a>
+                        </h2>
+
+                        <p class="text-gray-500 py-4">
+                            Facilisi sed ante id et euismod volutpat. Sollicitudin urna, lacus viverra risus auctor.
+                            Eget
+                            sed vestibulum enim quisque id molestie elementum.
+                    </div>
+                    <!-- /SUBSEC content -->
+                </div>
+                <!-- /SEC card_one -->
+
+                <!-- SEC card_two -->
+                <div class="py-10">
+                    <!-- SUBSEC image -->
                     <a href="#">
                         <img src="./images/life_three.jpg"
-                            class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                            class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
+                    </a>
+                    <!-- /SUBSEC image -->
+
+                    <!-- SUBSEC content -->
+                    <div class="flex flex-row items-center py-4">
+                        <div
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                            life style
+                        </div>
+                        <span class="uppercase text-xs font-medium">jan 16, 2022</span>
+                    </div>
+
+                    <div class="flex flex-col w-full">
+                        <h2 class="font-bold text-4xl">
+                            <a href="#">
+                                Believe in your car skills but never stop improving
+                            </a>
+                        </h2>
+
+                        <p class="text-gray-500 py-4">
+                            Cras hendrerit turpis gravida ut augue luctus netus. Lectus aenean adipiscing ullamcorper
+                            nisi,
+                            elementum mus etiam.
+                    </div>
+                    <!-- /SUBSEC content -->
+                </div>
+                <!-- /SEC card_two -->
+
+                <!-- SEC card_three -->
+                <div>
+                    <!-- SUBSEC image -->
+                    <a href="#">
+                        <img src="./images/design_two.jpg"
+                            class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
+                    </a>
+                    <!-- /SUBSEC image -->
+
+                    <!-- SUBSEC content -->
+                    <div class="flex flex-row items-center py-4">
+                        <div
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                            design
+                        </div>
+                        <span class="uppercase text-xs font-medium">jan 16, 2022</span>
+                    </div>
+
+                    <div class="flex flex-col w-full">
+                        <h2 class="font-bold text-4xl">
+                            <a href="#">
+                                Brilliant documentaries and books about animation
+                            </a>
+                        </h2>
+
+                        <p class="text-gray-500 py-4">
+                            Viverra in ultrices quam urna, massa nunc. Enim magna sed consequat et porttitor tortor
+                            quisque
+                            egestas odio. Nibh orci sed sed.
+                    </div>
+                    <!-- /SUBSEC content -->
+                </div>
+                <!-- /SEC card_three -->
+
+                <!-- SEC button -->
+                <a href="#">
+                    <button
+                        class="bg-black mt-8 border-2 border-black hover:bg-transparent hover:text-black transition-all duration-300 rounded w-full text-white text-lg font-semibold py-4">See
+                        All Posts</button>
+                </a>
+                <!-- /SEC button -->
+            </div>
+            <!-- /SUBSEC flex_container -->
+
+        </section>
+        <!-- /SEC news -->
+
+        <!-- SEC sidebar -->
+        <section class="bg-inherit lg:w-1/3">
+
+            <!-- SUBSEC container -->
+            <div class="container mx-auto p-8 flex flex-col">
+                <!-- SEC header -->
+                <h2 class="font-semibold text-gray-700 text-lg">
+                    Categories
+                </h2>
+                <!-- /SEC header -->
+
+                <!-- SEC items -->
+                <div class="flex flex-col my-4">
+                    <div class="flex flex-row items-center group py-2">
+                        <div
+                            class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
+                        </div>
+                        <h2 class="font-bold text-xl ml-4">
+                            <a href="#">
+                                Design
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div class="flex flex-row items-center group py-2">
+                        <div
+                            class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
+                        </div>
+                        <h2 class="font-bold text-xl ml-4">
+                            <a href="#">
+                                Photographs
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div class="flex flex-row items-center group py-2">
+                        <div
+                            class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
+                        </div>
+                        <h2 class="font-bold text-xl ml-4">
+                            <a href="#">
+                                Interior
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div class="flex flex-row items-center group py-2">
+                        <div
+                            class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
+                        </div>
+                        <h2 class="font-bold text-xl ml-4">
+                            <a href="#">
+                                Technology
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div class="flex flex-row items-center group pt-2">
+                        <div
+                            class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
+                        </div>
+                        <h2 class="font-bold text-xl ml-4">
+                            <a href="#">
+                                Life Style
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+                <!-- /SEC items -->
+            </div>
+            <!-- /SUBSEC container -->
+
+            <!-- SUBSEC container -->
+            <div class="container mx-auto px-8 flex flex-col">
+                <!-- SEC header -->
+                <h2 class="font-semibold text-gray-700 text-lg mb-4">
+                    Featured
+                </h2>
+                <!-- /SEC header -->
+
+                <!-- SEC column_one -->
+                <div class="flex my-4">
+                    <div class="h-full">
+                        <a href="#">
+                            <img src="./images/tech_three.jpg"
+                                class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-center items-start ml-8">
+                        <div
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
+                            technology
+                        </div>
+                        <h2 class="font-bold text-lg">
+                            <a href="#">
+                                iPhone is bound to make an impact in your business
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+                <!-- /SEC column_one -->
+
+                <!-- SEC column_two -->
+                <div class="flex my-4">
+                    <div class="h-full">
+                        <a href="#">
+                            <img src="./images/life_two.jpg"
+                                class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-center items-start ml-8">
+                        <div
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
+                            life style
+                        </div>
+                        <h2 class="font-bold text-lg">
+                            <a href="#">
+                                Are you embarrassed by your car skills? Here's what to do
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+                <!-- /SEC column_two -->
+
+                <!-- SEC column_three -->
+                <div class="flex my-4">
+                    <div class="h-full">
+                        <a href="#">
+                            <img src="./images/life_three.jpg"
+                                class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-center items-start ml-8">
+                        <div
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
+                            life style
+                        </div>
+                        <h2 class="font-bold text-lg">
+                            <a href="#">
+                                Believe in your car skills but never stop improving
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+                <!-- /SEC column_one -->
+            </div>
+            <!-- /SUBSEC container -->
+
+            <!-- SUBSEC container -->
+            <div class="container mx-auto px-8">
+                <!-- SEC header -->
+                <h2 class="font-semibold text-gray-700 text-lg my-4">
+                    Tags
+                </h2>
+                <!-- /SEC header -->
+
+                <!-- SEC buttons -->
+                <div class="flex flex-row items-center justify-start w-full flex-wrap">
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Hosting
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            iPhone
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Courses
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Architecture
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Skills
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Animation
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Books
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Design
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Interior
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Photographs
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Space
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Technology
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Useful Tips
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Car
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button
+                            class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
+                            Life Style
+                        </button>
                     </a>
                 </div>
-                <div class="flex flex-col justify-center items-start ml-8">
-                    <div
-                        class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
-                        life style
-                    </div>
-                    <h2 class="font-bold text-lg">
-                        <a href="#">
-                            Believe in your car skills but never stop improving
-                        </a>
-                    </h2>
-                </div>
+                <!-- /SEC buttons -->
             </div>
-            <!-- /SEC column_one -->
-        </div>
-        <!-- /SUBSEC container -->
-
-    </section>
-    <!-- /SEC featured -->
-
-    <!-- SEC tags -->
-    <section class="bg-inherit">
-        <!-- SUBSEC container -->
-        <div class="container mx-auto px-8">
-            <!-- SEC header -->
-            <h2 class="font-semibold text-gray-700 text-lg my-4">
-                Tags
-            </h2>
-            <!-- /SEC header -->
-
-            <!-- SEC buttons -->
-            <div class="flex flex-row items-center justify-start w-full flex-wrap">
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Hosting
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        iPhone
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Courses
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Architecture
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Skills
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Animation
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Books
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Design
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Interior
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Photographs
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Space
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Technology
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Useful Tips
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Car
-                    </button>
-                </a>
-                <a href="#">
-                    <button
-                        class="w-min border rounded-md whitespace-nowrap bg-transparent m-1 py-2 px-5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-black hover:text-white">
-                        Life Style
-                    </button>
-                </a>
-            </div>
-            <!-- /SEC buttons -->
-        </div>
-        <!-- /SUBSEC container -->
-    </section>
-    <!-- /SEC tags -->
+            <!-- /SUBSEC container -->
+        </section>
+        <!-- /SEC sidebar -->
+    </div>
+    <!-- /SEC news_grid -->
 
     <!-- divider -->
     <div class="mx-auto w-[90%] h-[1px] bg-neutral-300 my-8"></div>
