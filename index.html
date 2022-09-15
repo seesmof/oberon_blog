@@ -15,17 +15,27 @@
     <title>Oberon | seesmof</title>
 
     <!-- links -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
-    <link rel="stylesheet" href="./style.css">
 
-    <!-- styles -->
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script defer src="https://kit.fontawesome.com/dfc53f140e.js" crossorigin="anonymous"></script>
+
+    <!-- TailwindCSS_styles -->
+    <style type="text/tailwindcss">
+        @layer components {
+
+        }
+    </style>
+
+    <!-- custom_styles -->
     <style>
         body {
-            font-family: 'Manrope';
+            font-family: "Manrope", sans-serif;
         }
     </style>
 
@@ -80,15 +90,15 @@
             class="container lg:w-[75%] mx-auto px-8 gap-y-6 grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-6">
 
             <!-- SUBSEC card_car -->
-            <div
-                class="bg-[url('./images/life_one.jpg')] col-span-1 row-span-1 rounded-md bg-no-repeat bg-cover w-full h-[468px] p-8 transition-all hover:scale-105 duration-500 hover:shadow-2xl hover:brightness-105 group">
+            <div style="background-image: url(./images/life_one.jpg);"
+                class="col-span-1 row-span-1 rounded-md bg-no-repeat bg-cover w-full h-[468px] p-8 transition-all hover:scale-105 duration-500 hover:shadow-2xl hover:brightness-105 group">
 
                 <!-- SUBSEC content_container -->
                 <div
                     class="flex flex-col items-start justify-end h-full group-hover:drop-shadow-2xl group-hover:translate-y-1 transition-all duration-500">
                     <div>
                         <div
-                            class="badge uppercase bg-white text-neutral-900 font-medium mr-2 rounded border-none text-xs py-2 px-3">
+                            class="badge uppercase bg-white text-neutral-900 font-medium mr-2 rounded border-none text-xs p-2 lg:p-3">
                             life
                             style
                         </div>
@@ -103,15 +113,15 @@
             <!-- /SUBSEC card_car -->
 
             <!-- SUBSEC card_nasa -->
-            <div
-                class="bg-[url('./images/tech_one.jpg')] col-span-1 row-span-1 rounded-md bg-no-repeat bg-cover w-full h-[468px] p-8 transition-all hover:scale-105 duration-500 hover:shadow-2xl hover:brightness-105 group">
+            <div style="background-image: url(./images/tech_one.jpg);"
+                class="col-span-1 row-span-1 rounded-md bg-no-repeat bg-cover w-full h-[468px] p-8 transition-all hover:scale-105 duration-500 hover:shadow-2xl hover:brightness-105 group">
 
                 <!-- SUBSEC content_container -->
                 <div
                     class="flex flex-col items-start justify-end h-full group-hover:drop-shadow-2xl group-hover:translate-y-1 transition-all duration-500">
                     <div>
                         <div
-                            class="badge uppercase bg-white text-neutral-900 font-medium mr-2 rounded border-none text-xs py-2 px-3">
+                            class="badge uppercase bg-white text-neutral-900 font-medium mr-2 rounded border-none text-xs p-2 lg:p-3">
                             technology
                         </div>
                         <span class="text-white uppercase text-xs font-medium">jan 16, 2022</span>
@@ -152,7 +162,7 @@
                     <a href="#">
                         <div>
                             <div
-                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2 lg:p-3">
                                 technology
                             </div>
                             <span class="uppercase text-xs font-medium">jan 16, 2022</span>
@@ -175,7 +185,7 @@
                     <a href="#">
                         <div>
                             <div
-                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2 lg:p-3">
                                 interior
                             </div>
                             <span class="uppercase text-xs font-medium">jan 16, 2022</span>
@@ -201,7 +211,7 @@
                     <a href="#">
                         <div>
                             <div
-                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2 lg:p-3">
                                 technology
                             </div>
                             <span class="uppercase text-xs font-medium">jan 16, 2022</span>
@@ -224,7 +234,7 @@
                     <a href="#">
                         <div>
                             <div
-                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2 lg:p-3">
                                 life style
                             </div>
                             <span class="uppercase text-xs font-medium">jan 16, 2022</span>
@@ -250,7 +260,7 @@
                     <a href="#">
                         <div>
                             <div
-                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2 lg:p-3">
                                 photographs
                             </div>
                             <span class="uppercase text-xs font-medium">jan 16, 2022</span>
@@ -273,7 +283,7 @@
                     <a href="#">
                         <div>
                             <div
-                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                                class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2 lg:p-3">
                                 design
                             </div>
                             <span class="uppercase text-xs font-medium">jan 16, 2022</span>
@@ -300,7 +310,7 @@
     <section class="bg-inherit px-8">
 
         <!-- SUBSEC container -->
-        <div class="container lg:w-[75%] mx-auto p-4 rounded-md bg-cover"
+        <div class="container lg:w-[74%] mx-auto p-4 rounded-md bg-cover"
             style="background-image: url('./images/subscribe_back.jpg');">
 
             <!-- SUBSEC black_container -->
@@ -336,32 +346,32 @@
     <!-- /divider -->
 
     <!-- SEC news_grid -->
-    <div class="lg:flex lg:flex-row lg:items-center lg:justify-center lg:w-[75%] lg:mx-auto">
+    <div class="lg:flex lg:flex-row lg:w-[75%] lg:mx-auto">
         <!-- SEC news -->
         <section class="bg-inherit lg:w-2/3">
 
             <!-- SUBSEC flex_container -->
-            <div class="container lg:w-[75%] flex flex-col mx-auto px-8">
+            <div class="flex flex-col mx-auto px-8">
                 <!-- SEC card_one -->
                 <div>
                     <!-- SUBSEC image -->
                     <a href="#">
                         <img src="./images/inter_two.jpg"
-                            class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
+                            class="rounded-md w-full object-cover h-[360px] lg:h-[500px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
                     </a>
                     <!-- /SUBSEC image -->
 
                     <!-- SUBSEC content -->
                     <div class="flex flex-row items-center py-4">
                         <div
-                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                            class="badge lg:p-3 uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2">
                             interior
                         </div>
                         <span class="uppercase text-xs font-medium">jan 16, 2022</span>
                     </div>
 
                     <div class="flex flex-col w-full">
-                        <h2 class="font-bold text-4xl">
+                        <h2 class="font-bold text-4xl lg:text-5xl">
                             <a href="#">
                                 10 Top commercial interior desing firms to watch
                             </a>
@@ -381,21 +391,21 @@
                     <!-- SUBSEC image -->
                     <a href="#">
                         <img src="./images/life_three.jpg"
-                            class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
+                            class="rounded-md w-full object-cover h-[360px] lg:h-[500px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
                     </a>
                     <!-- /SUBSEC image -->
 
                     <!-- SUBSEC content -->
                     <div class="flex flex-row items-center py-4">
                         <div
-                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                            class="badge lg:p-3 uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2">
                             life style
                         </div>
                         <span class="uppercase text-xs font-medium">jan 16, 2022</span>
                     </div>
 
                     <div class="flex flex-col w-full">
-                        <h2 class="font-bold text-4xl">
+                        <h2 class="font-bold text-4xl lg:text-5xl">
                             <a href="#">
                                 Believe in your car skills but never stop improving
                             </a>
@@ -415,21 +425,21 @@
                     <!-- SUBSEC image -->
                     <a href="#">
                         <img src="./images/design_two.jpg"
-                            class="rounded-md w-full object-cover h-[360px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
+                            class="rounded-md w-full object-cover h-[360px] lg:h-[500px] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-105">
                     </a>
                     <!-- /SUBSEC image -->
 
                     <!-- SUBSEC content -->
                     <div class="flex flex-row items-center py-4">
                         <div
-                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs py-2 px-2">
+                            class="badge lg:p-3 uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium mr-2 rounded border-none text-xs p-2">
                             design
                         </div>
                         <span class="uppercase text-xs font-medium">jan 16, 2022</span>
                     </div>
 
                     <div class="flex flex-col w-full">
-                        <h2 class="font-bold text-4xl">
+                        <h2 class="font-bold text-4xl lg:text-5xl">
                             <a href="#">
                                 Brilliant documentaries and books about animation
                             </a>
@@ -458,10 +468,10 @@
         <!-- /SEC news -->
 
         <!-- SEC sidebar -->
-        <section class="bg-inherit lg:w-1/3">
+        <section class="bg-inherit lg:w-1/3 lg:m-0 lg:sticky lg:top-0 lg:h-full lg:border-l lg:border-neutral-300">
 
             <!-- SUBSEC container -->
-            <div class="container mx-auto p-8 flex flex-col">
+            <div class="mx-auto px-8 flex flex-col lg:mb-6">
                 <!-- SEC header -->
                 <h2 class="font-semibold text-gray-700 text-lg">
                     Categories
@@ -469,8 +479,8 @@
                 <!-- /SEC header -->
 
                 <!-- SEC items -->
-                <div class="flex flex-col my-4">
-                    <div class="flex flex-row items-center group py-2">
+                <div class="flex flex-col my-4 gap-y-4 lg:mt-4">
+                    <div class="flex flex-row items-center group">
                         <div
                             class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
                         </div>
@@ -481,7 +491,7 @@
                         </h2>
                     </div>
 
-                    <div class="flex flex-row items-center group py-2">
+                    <div class="flex flex-row items-center group">
                         <div
                             class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
                         </div>
@@ -492,7 +502,7 @@
                         </h2>
                     </div>
 
-                    <div class="flex flex-row items-center group py-2">
+                    <div class="flex flex-row items-center group">
                         <div
                             class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
                         </div>
@@ -503,7 +513,7 @@
                         </h2>
                     </div>
 
-                    <div class="flex flex-row items-center group py-2">
+                    <div class="flex flex-row items-center group">
                         <div
                             class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
                         </div>
@@ -514,7 +524,7 @@
                         </h2>
                     </div>
 
-                    <div class="flex flex-row items-center group pt-2">
+                    <div class="flex flex-row items-center group">
                         <div
                             class="bg-transparent border rounded-full w-5 h-5 group-hover:bg-black transition-all duration-300">
                         </div>
@@ -530,9 +540,9 @@
             <!-- /SUBSEC container -->
 
             <!-- SUBSEC container -->
-            <div class="container mx-auto px-8 flex flex-col">
+            <div class="mx-auto px-8 flex flex-col lg:my-6">
                 <!-- SEC header -->
-                <h2 class="font-semibold text-gray-700 text-lg mb-4">
+                <h2 class="font-semibold text-gray-700 text-lg">
                     Featured
                 </h2>
                 <!-- /SEC header -->
@@ -542,15 +552,15 @@
                     <div class="h-full">
                         <a href="#">
                             <img src="./images/tech_three.jpg"
-                                class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                                class="rounded-full w-20 object-cover lg:w-48 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
                         </a>
                     </div>
                     <div class="flex flex-col justify-center items-start ml-8">
                         <div
-                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs p-2 lg:p-3">
                             technology
                         </div>
-                        <h2 class="font-bold text-lg">
+                        <h2 class="font-bold text-lg lg:mt-2">
                             <a href="#">
                                 iPhone is bound to make an impact in your business
                             </a>
@@ -564,15 +574,15 @@
                     <div class="h-full">
                         <a href="#">
                             <img src="./images/life_two.jpg"
-                                class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                                class="rounded-full w-20 object-cover lg:w-48 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
                         </a>
                     </div>
                     <div class="flex flex-col justify-center items-start ml-8">
                         <div
-                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs p-2 lg:p-3">
                             life style
                         </div>
-                        <h2 class="font-bold text-lg">
+                        <h2 class="font-bold text-lg lg:mt-2">
                             <a href="#">
                                 Are you embarrassed by your car skills? Here's what to do
                             </a>
@@ -586,15 +596,15 @@
                     <div class="h-full">
                         <a href="#">
                             <img src="./images/life_three.jpg"
-                                class="rounded-full h-20 w-20 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                                class="rounded-full w-20 object-cover lg:w-48 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
                         </a>
                     </div>
                     <div class="flex flex-col justify-center items-start ml-8">
                         <div
-                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs py-2 px-2">
+                            class="badge uppercase bg-neutral-100 text-neutral-600 transition-all duration-300 hover:bg-black hover:text-white font-medium rounded border-none text-xs p-2 lg:p-3">
                             life style
                         </div>
-                        <h2 class="font-bold text-lg">
+                        <h2 class="font-bold text-lg lg:mt-2">
                             <a href="#">
                                 Believe in your car skills but never stop improving
                             </a>
@@ -606,7 +616,7 @@
             <!-- /SUBSEC container -->
 
             <!-- SUBSEC container -->
-            <div class="container mx-auto px-8">
+            <div class="mx-auto px-8">
                 <!-- SEC header -->
                 <h2 class="font-semibold text-gray-700 text-lg my-4">
                     Tags
@@ -715,59 +725,58 @@
     <!-- /SEC news_grid -->
 
     <!-- divider -->
-    <div class="mx-auto w-[90%] h-[1px] bg-neutral-300 my-8"></div>
+    <div class="mx-auto w-[90%] lg:w-[71%] h-[1px] bg-neutral-300 my-8"></div>
     <!-- /divider -->
 
     <!-- SEC footer -->
     <section class="bg-inherit">
         <!-- SUBSEC container -->
-        <div class="container mx-auto flex flex-col items-center justify-center pb-8">
-            <div class="flex flex-col items-center justify-center">
+        <div
+            class="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:w-3/4 pb-8 lg:pb-10 lg:py-4">
+            <div
+                class="flex flex-col items-center lg:items-start justify-center lg:order-2 lg:border-l lg:border-neutral-300 lg:pl-12">
                 <a href="#"
-                    class="pb-2 font-semibold text-sm text-gray-400 duration-200 transition-all hover:text-black">
+                    class="pb-2 font-medium lg:text-base text-sm text-neutral-600 duration-200 transition-all hover:text-black">
                     Facebook
                 </a>
                 <a href="#"
-                    class="py-2 font-semibold text-sm text-gray-400 duration-200 transition-all hover:text-black">
+                    class="py-2 font-medium lg:text-base text-sm text-neutral-600 duration-200 transition-all hover:text-black">
                     Twitter
                 </a>
                 <a href="#"
-                    class="py-2 font-semibold text-sm text-gray-400 duration-200 transition-all hover:text-black">
+                    class="py-2 font-medium lg:text-base text-sm text-neutral-600 duration-200 transition-all hover:text-black">
                     YouTube
                 </a>
             </div>
 
-            <div class="flex flex-col items-center justify-center my-8">
+            <div
+                class="flex flex-col items-center lg:items-start justify-center my-8 lg:my-0 lg:order-3 lg:border-l lg:border-neutral-300 lg:pl-12">
                 <a href="#"
-                    class="pb-2 font-semibold text-sm text-gray-400 duration-200 transition-all hover:text-black">
+                    class="pb-2 font-medium lg:text-base text-sm text-neutral-600 duration-200 transition-all hover:text-black">
                     Licensing
                 </a>
                 <a href="#"
-                    class="py-2 font-semibold text-sm text-gray-400 duration-200 transition-all hover:text-black">
+                    class="py-2 font-medium lg:text-base text-sm text-neutral-600 duration-200 transition-all hover:text-black">
                     Style Guide
                 </a>
                 <a href="#"
-                    class="py-2 font-semibold text-sm text-gray-400 duration-200 transition-all hover:text-black">
+                    class="py-2 font-medium lg:text-base text-sm text-neutral-600 duration-200 transition-all hover:text-black">
                     Changelog
                 </a>
             </div>
 
-            <img src="./images/logo.svg" class="w-[10rem]">
-            <a href="https://github.com/seesmof"
-                class="text-gray-400 duration-300 transition-all hover:text-black hover:scale-105">
-                Made by seesmof
-            </a>
+            <div class="lg:order-1 lg:flex lg:items-center lg:gap-x-4">
+                <img src="./images/logo.svg" class="w-[10rem] lg:w-[13rem]">
+                <a href="https://github.com/seesmof"
+                    class="text-gray-400 lg:mt-1 duration-300 transition-all hover:text-black hover:scale-105">
+                    Made by seesmof
+                </a>
+            </div>
 
         </div>
         <!-- /SUBSEC container -->
     </section>
     <!-- /SEC footer -->
-
-    <!-- scripts -->
-    <script src="https://kit.fontawesome.com/dfc53f140e.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <!-- /scripts -->
 
 </body>
 
