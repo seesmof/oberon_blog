@@ -35,7 +35,7 @@ Oberon Blog website made from a template taken from Webflow. Really neat looking
 
 - [Live View](https://seesmof.github.io/oberon_blog/)
 
-![Website Page](./images/oberon_blog-seesmof.png)
+![Website Page](./images/Oberon-seesmof.png)
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
